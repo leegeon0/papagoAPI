@@ -1,0 +1,822 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; border: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+/* 헤더 영역 */
+
+#header{
+    width: 1400px;
+    height: 120px;
+    background-color: rgba(0,0,0,.1);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+
+}
+.headerCen{
+    width: 1380px;
+    height: 100px;
+    background-color: #333B5A;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.first_line{
+    display: flex;
+    justify-content: space-between;
+    color: #eee;
+}
+.cenRight{
+    display: flex;
+    justify-content: end;
+    color: #eee;
+}
+
+
+#main_login{
+    width: 1400px;
+    height: 800px;
+    margin: auto;
+    background-color: rgba(0,0,0,.1);
+}
+/* 메인 이미지 */
+#main_page{
+    width: 900px;
+    height: 800px;
+    background-color: rgba(255,0,0,.1);
+    float: left;
+}
+#main_page img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 로그인 페이지 */
+
+#login_page{
+    width: 500px;
+    height: 800px;
+    /* background-color: rgba(0,0,255,.1); */
+    float: left;
+    border: solid 5px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+.login_page_box{
+    width: 490px;
+    height: 790px;
+    background-color: rgba(255,255,255,1);
+    position: relative;
+}
+.pos_img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.pos_img img{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+#login{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translateX(-50%);
+}
+.row{
+    margin: 0;
+}
+
+.col-md-4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-group img{
+    width: 30px;
+    height: 30px;
+}
+
+.form-label i{
+    font-size: 25px;
+}
+
+.col-md-4 label {
+    flex: 0 0 30px; /* 라벨의 고정 너비 설정 */
+    font-weight: bold;
+    margin: 0;
+}
+
+.col-md-4 input {
+    flex: 1; /* 입력 필드가 남은 공간을 차지하도록 설정 */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn_group{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn a{
+    color: #ccc;
+}
+
+.g-3, .gy-3 {
+    --bs-gutter-y: 0;
+}
+.col-12{
+    display: flex;
+    justify-content: end;
+}
+
+.sign_up_btn{
+	margin-left: 10px;
+}
+
+/* index2 영역 */
+
+/* 로그인 페이지 */
+
+/* logo */
+.login_page_box{
+    background-color: rgba(255,255,255,1);
+}
+.index2_pos_img{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255,0,0,.1);
+    float: left;
+}
+.index2_pos_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 유저패널 */
+
+.user_panel{
+    width: 290px;
+    height: 200px;
+    background-color: rgba(255,255,255,.1);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.user_panel span{
+    font-weight: bold;
+}
+
+/* 현재 시간 */
+
+#now_date{
+    width: 460px;
+    height: 50px;
+    margin: auto;
+    padding-top: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2C2F32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#now_date p{
+    color: #ccc;
+    font-size: 20px;
+}
+.day{
+    color: orange;
+}
+
+/* 판매점 */
+
+#store_box{
+    width: 460px;
+    height: 100px;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.store_address{
+    width: 458px;
+    height: 48px;
+    background-color: rgba(255,0,0,.1);
+    padding-top: 8px;
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius:  4px 4px 0 0;
+}
+.salesman{
+    width: 158px;
+    height: 50px;
+    background-color: rgba(255,0,0,.1);
+    padding-top: 8px;
+    border-right: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0 4px;
+    float: left;
+}
+.salesman_name{
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255,0,0,.1);
+    padding-top: 8px;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 4px 0;
+    float: left;
+}
+
+/* 메인 페이지 메뉴 */
+
+#main_page_menu{
+    width: 480px;
+    height: 400px;
+    /* background-color: rgba(0,0,0,.1); */
+    margin: auto;
+}
+#main_page_menu button{
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: rgba(255,255,255,1);
+}
+.div_main_page_menu_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#main_page_menu img{
+    width: 120px;
+    height: 120px;
+
+}
+
+.font20{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 판매관리 영역 (테이블 영역)*/
+
+#sales_management_header{
+    width: 1400px;
+    height: 120px;
+    background-color: rgba(0,0,0,.1);
+    margin: auto;
+}
+.first_top_logo{
+    width: 400px;
+    height: 110px;
+    margin-top: 5px;
+    background-color: rgba(255,0,0,.1);
+    float: left;
+}
+.first_top_logo img{
+    width: 400px;
+    height: 110px;
+
+}
+.header_right{
+    width: 880px;
+    height: 110px;
+    margin: 5px 0 0 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255,0,0,.1);
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.close_btn{
+    width: 110px;
+    height: 110px;
+    font-size: 60px;
+    background-color: black;
+    color: #fff;
+    margin : 5px 0 0 5px;
+    border-radius: 10px;
+}
+
+#pos2_main{
+    width: 1400px;
+    height: 810px;
+    background-color: rgba(0,0,0,.1);
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+}
+#pos2_table_box{
+    width: 1250px;
+    height: 710px;
+    background-color: rgba(255,0,0,.1);
+    background-image: url(../img/plywood2.jpg);
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+
+}
+.hole_tab{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0,0,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservation_tab{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0,0,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    right: -50px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.print_receipt_tab{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0,0,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    right: -50px;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inventory_management_tab{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0,0,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    right: -50px;
+    top: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pos2_table{
+    width: 190px;
+    height: 170px;
+    background-color: rgba(255,0,255,.1);
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+}
+.pos2_hole_line1{
+    display: flex;
+    justify-content: center;
+}
+
+.table_header{
+
+    width: 190px;
+    height: 25px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px 10px 0 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+
+.pos_num_1,
+.pos_num_2,
+.pos_num_3,
+.pos_num_4,
+.pos_num_5{
+    margin-top: 50px;
+}
+.pos2_hole_line2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pos_num_6{
+    margin-left: 220px;
+}
+.pos2_hole_line3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pos_num_8{
+    margin-left: 220px;
+}
+
+
+/* 판매관리 영역 */
+#sales_management_box{
+    width: 1400px;
+    height: 810px;
+    background-color: rgba(0,0,0,.1);
+    margin: auto;
+}
+#left_box{
+    width: 700px;
+    height: 810px;
+    float: left;
+    background-color: rgba(0,0,0,.1);
+
+}
+#right_box{
+    width: 700px;
+    height: 810px;
+    background-color: rgba(0,0,255,.1);
+    float: left;
+
+}
+
+.table_menu_list{
+    width: 700px;
+    height: 300px;
+    background-color: rgba(255,255,0,.2);
+    position: relative;
+}
+.list_top_line{
+    width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.list_bottom_line{
+    width: 700px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.table_menu_list_checkbox{
+    width: 50px;
+    height: 40px;
+    padding-top: 5px;
+    background-color: black;
+}
+.form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_name{
+    width: 130px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_unit_price{
+    width: 110px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_quantity{
+    width: 73px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_discount{
+    width: 110px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_amount{
+    width: 117px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_menu_list_note{
+    width: 87.5px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select_btn_list{
+    width: 700px;
+    height: 60px;
+    background-color: rgba(0,0,255,.1);
+    display: flex;
+}
+.cancel_discount_box{
+    width: 350px;
+    height: 60px;
+    background-color: rgba(0,0,255,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c_d_p_m_btn{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.plus_minus_box{
+    width: 350px;
+    height: 60px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate_box{
+    width: 700px;
+    height: 450px;
+    background-color: rgba(0,0,0,.1);
+    position: relative;
+}
+
+.payment_info_box{
+    width: 300px;
+    height: 430px;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.payment_info{
+    width: 290px;
+    height: 60px;
+    background-color: #413E45;
+    margin: 5px 0 0 5px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.total_amount{
+    width: 290px;
+    height: 70px;
+    background-color: #413E45;
+    margin-left: 5px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.discount_amount{
+    width: 290px;
+    height: 70px;
+    background-color: #413E45;
+    margin-left: 5px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.received_to_be_amount{
+    width: 290px;
+    height: 70px;
+    background-color: #413E45;
+    margin-left: 5px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.received_amount{
+    width: 290px;
+    height: 70px;
+    background-color: #413E45;
+    margin-left: 5px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.change_amount{
+    width: 290px;
+    height: 70px;
+    background-color: #413E45;
+    margin-left: 5px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.calc_box{
+    width: 253px;
+    height: 430px;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    top: 10px;
+    right: 120px;
+}
+.calc{
+    width: 243px;
+    height: 420px;
+    background-color: rgba(0,0,255,.1);
+    margin: 5px auto 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.calc_display{
+    width: 227px;
+    height: 50px;
+    background-color: #413E45 ;
+    padding-top: 5px; 
+    border-radius: 10px;
+    margin-left: 3px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.calc_display>h3{
+    font-size: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+.num_btn{
+    width: 70px;
+    height: 68px;
+    background-color: #413E45;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: white;
+    font-size: 40px;
+}
+
+.btn_enter{
+    width: 148px;
+}
+
+.packaging{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,255,.1);
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+.check_inquiry{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,255,.1);
+    position: absolute;
+    bottom: 140px;
+    right: 10px;
+}
+
+.menu_box{
+    width: 700px;
+    height: 650px;
+    background-color: rgba(0,0,255,.1);
+}
+
+.menu_btn_box{
+    width: 700px;
+    height: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_btn{
+    width: 130px;
+    height: 100px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+    
+}
+
+.set_menu_list li{
+    position: relative;
+}
+.card{
+    position: absolute;
+    width: 14rem;
+    margin: 0;
+    padding: 0;
+}
+
+.set_menu1{
+    left: -30px;
+}
+.set_menu2{
+    left: 200px;
+}
+
+.order_box{
+    width: 700px;
+    height: 160px;
+    background-color: rgba(255,0,0,.1);
+}
+
+.order_list{
+    padding-left: 0;
+}
+
+.order_box_btn{
+    float: left;
+    width: 140px;
+    height: 135px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.receipt_btn{
+    width: 230px;
+    height: 65px;
+}
+.dutchpay_btn{
+    width: 230px;
+    height: 65px;
+}
+
+.close_btn_sales{
+    width: 110px;
+    height: 110px;
+    font-size: 60px;
+    background-color: black;
+    color: #fff;
+    margin : 5px 0 0 5px;
+    border-radius: 10px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+#menuName, #quantity, #totalAmount {
+    display: inline;
+    font-size: 15px;
+  }
+
+

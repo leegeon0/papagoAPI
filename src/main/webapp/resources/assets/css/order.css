@@ -1,0 +1,168 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; border: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{width: 100%; height: 100vh; font-family: 'Noto Sans KR', sans-serif; background-color: #222; padding: 20px 20px 20px 150px;box-sizing: border-box;}
+.wrapper{width: 100%; height: 100%; background-color: #fff; border-radius: 20px;}
+.btnColor{background-color: #ff6b3d; color: white;}
+.btnBorder{border-radius: 15px; border : 1px solid #ff6b3d; box-sizing: border-box; background-color: #fff; color: #ff6b3d;}
+
+.btn{width: 300px; height: 100px;}
+
+
+
+/* 왼쪽 */
+.left {width: 75%; height:100%; float:left;display: flex; justify-content: center; align-items: center;}
+.orderContainerLeft {width: 84%; height:88%;display: flex; flex-direction: column; justify-content: space-between;}
+/* 탭 메뉴 영역 */
+.categoryBox {box-sizing: border-box; width: 100%; height: 16%; display: flex; position: relative; z-index: 1; justify-content: space-between; padding: 0; margin: 0;}
+.categoryBox li {width: 22%; height: 100%;}
+.categoryBox li {width: 22%; height: 100%;}
+.categoryBox li button{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-weight: bold; margin: auto; border-radius: 15px; border : 1px solid #ff6b3d; box-sizing: border-box; background-color: #fff; color: #ff6b3d; font-size: 1.3vw;}
+
+.categoryBox li button.tab_active {background-color: #ff6b3d; color:white; box-shadow: 10px 10px 10px rgba(0,0,0,.1);}
+
+
+
+/* 탭 콘텐츠 영역 */
+.menuBox {width: 100%; height: 78%; position: relative;}
+.tab_content1 {width: 100%; height: 100%;}
+.tab_c_arti1 {width: 82%; height: 100%; margin: auto; padding: 0;}
+.tab_c_arti1 li {width: 25%; height: 50%; float: left;}
+.tab_c_arti1 li:nth-of-type(3n+2) {margin:0 12.5%;}
+.tab_c_arti1 li img {width: 100%; aspect-ratio: 1.1; object-fit: cover;}
+.tab_c_arti1 li p {margin:3px auto 0; text-align: center; font-size: 16px;}
+.tab_c_arti1 li p:last-child {font-weight: bold;}
+.stars {margin: 5px auto; width: fit-content; height: fit-content; font-size: 1.2vw; color:gold;}
+
+
+/* 별점 */
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+       .rate { display: inline-block;border: 0;margin-right: 15px;}
+.rate > input {display: none;}
+.rate > label {float: right;color: #ddd}
+.rate > label:before {display: inline-block;font-size: 1rem;padding: .3rem .2rem;margin: 0;cursor: pointer;font-family: FontAwesome;content: "\f005 ";}
+.rate .half:before {content: "\f089 "; position: absolute;padding-right: 0;}
+.rate input:checked ~ label, 
+.rate label:hover,.rate label:hover ~ label { color: #f73c32 !important;  } 
+.rate input:checked + .rate label:hover,
+.rate input input:checked ~ label:hover,
+.rate input:checked ~ .rate label:hover ~ label,  
+.rate label:hover ~ input:checked ~ label { color: #f73c32 !important;  }  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 오른쪽 */
+.orderContainer {width:25%; height:100%; float:left; display: flex; justify-content: center; align-items: center;box-shadow: 0 15px 15px rgba(0,0,0,.05);}
+
+.orderContainerRight {width:94%; height:96%; display: flex; flex-direction: column; justify-content: space-between;}
+
+.countTimeBox {width:90%; display: flex; justify-content: space-between; margin:0 auto 10px; font-size: 1.3vw; align-items: center;}
+.countTimeBox span:last-child span {margin-right: 5px; color: #ff6b3d; font-size: 2vw; }
+
+
+.orderList {width: 100%; height: 58%;}
+.orderList button {cursor: pointer; width: 85px; height: 40px; background-color: white; color: black; border: #bbb solid 1px; box-sizing: border-box; border-radius: 5px; margin: 30px 0 15px;}
+section {width: 100%;}
+#sectionWrap {width: 100%; margin: auto; height: 100%;}
+#sectionWrap button {cursor: pointer; width: 85px; height: 40px; background-color: white; color: black; border: #bbb solid 1px; box-sizing: border-box; border-radius: 5px; margin: 30px 0 15px;}
+.like_box {width: 100%; height: 50px; border-bottom: 1px solid black; box-sizing: border-box; margin: 0; padding: 0;}
+.like_box ul {width: 100%; height: 100%;}
+.like_box li {float: left;}
+.like_box li:first-child {width: 35%; height: 100%; display: flex; align-items: center; justify-content: center;}
+.like_box li:nth-child(2) {width: 27%; height: 100%; display: flex; align-items: center; justify-content: center;}
+.like_box li:last-child {width: 30%; height: 100%; display: flex; align-items: center; justify-content: center;}
+#nothing {display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; flex-direction: column;}
+#nothing i {font-size: 3vw;}
+#nothing p {font-size: 18px; margin-top: 20px;}
+.liked {width: 100%; height: 100%; margin: 0; padding: 0;}
+.liked ul {width: 100%; height: 100%; margin: 0; padding: 0;}
+.liked ul li {float: left; height: 50px; display: flex; align-items: center; justify-content: center;}
+.liked ul li:first-child {width:35%; font-size: 17px;padding: 0 10px; box-sizing: border-box;}
+.liked ul li:nth-child(2) {width: 27%; display: flex; justify-content: space-between;}
+.liked ul li:nth-child(3) {width: 30%;}
+.liked ul li:last-child {width: 8%;}
+/* .liked ul li:nth-child(2) span {margin: 0 15px;} */
+.liked button {width: 35px; height:20px; margin: 0; display: flex; align-items: center; justify-content: center;}
+.liked .likedMinus, .liked .likedPlus {width: 30px; height: 30px; min-width: 22px; min-height: 22px; border-radius: 15px; font-size: 1.2vw; color:#999;}
+
+.new_contents_container {width: 100%; height: 90%; overflow-y: auto;}
+
+
+.totalPriceBox {width:90%; display: flex; justify-content: space-between; margin:10px auto; font-size: 1.3vw;}
+.totalPriceBox span:last-child span {margin-left: 15px;}
+
+
+.orderBtnBox {height: 20%; display: flex; flex-direction: column; justify-content: space-between;} 
+.cencelBtn {width: 100%; height: 48%; font-size: 1.3vw; font-weight: bold;}
+.orderBtn {width: 100%; height: 48%; font-size: 1.3vw; font-weight: bold; border-radius: 15px;}
+
+
+
+
+
+
+
+
+
+.modal_bg {width: 100%; height: 100%; background-color: rgba(0,0,0,.7); position: fixed; left: 0; top: 0; display: none; z-index: 100;}
+.popup_btn {cursor: pointer; color:darkred; font-family: 'Anton', sans-serif;
+animation-name: ani1; animation-duration: 30s; animation-iteration-count: infinite;}
+.modalLeftBox {width: 650px; height: 500px; position: fixed; left: 50%; top:50%; transform: translate(-50%,-50%);display: none; z-index: 100; background-color: white;}
+.modalBox {width: 650px; height: 500px; float: left; position: relative; box-shadow: 10px 10px 10px rgba(0,0,0,.04);}
+.modalBox img {width: 295px; height: 300px; object-fit: cover; position: absolute; top: 35px; left: 30px;}
+.modalBox p {font-size: 20px; font-family: 'Gowun Batang', serif; text-indent: 10px;}
+.modalStarBox {font-size: 60px; position: absolute; bottom:195px; right: 80px;}
+.submitBtn {width: 205px; height: 100px; position: absolute; bottom: 48px; right:60px; border-radius: 15px; font-size: 20px; font-weight: bold;}
+.closeStarBox {width: 205px; height: 100px; position: absolute; bottom: 48px; left:60px; border-radius: 15px; font-size: 20px; font-weight: bold;}
+.modalOptionRightBox {width: 550px; height: 100%; float:left; padding: 20px; box-sizing: border-box; display: none;}
+.modalOptionRightBox p {margin:unset;}
+.modalOptionBox {width: 480px; height: 330px; margin-top: 25px; padding: 0;}
+.modalOptionBox li {width: 150px; height: 157px; box-shadow: 10px 10px 10px rgba(0,0,0,.05); cursor:pointer; position: relative; float: left; margin-right: 15px;}
+.modalOptionBox li img {width: 100%; aspect-ratio: 1.5;}
+.modalOptionCloseBtn {width: 120px; height: 50px; position:absolute; bottom: 20px; right: 36px;}
+.modalStarRightBox {width: 550px; height: 500px; float: left; display: flex; justify-content: center; align-items: center; display: none; position: relative;}
+.modalStarRightBox p {text-align: center; font-size: 1.1vw; font-weight: bold; margin-top: 100px;}
+.md_m {float: right; width: 420px; height: 100%; font-family: 'Gowun Batang', serif;}
+.modal_info {width: 260px; height: 190px; position: absolute; bottom: 255px; right: 25px;}
+.modal_info p {text-align: center;}
+.modal_info .stars {position: absolute; right: 0; bottom: 40px;}
+.modal_info p:last-child {position: absolute; bottom: 0; margin-bottom: 0; right: 0;}
+.modalOptionBtn {width: 270px; height: 70px; font-size: 1.3vw; position: absolute; right: 25px; bottom: 165px;}
+.modalCencelBtn {width:290px; height: 100px; font-size: 1.3vw;position: absolute; left: 30px; bottom: 20px;}
+.modalOrderBtn {width:290px; height: 100px; font-size: 1.3vw; position: absolute; right: 30px; bottom: 20px; border-radius: 15px;}
+.selected {border: 2px solid #ff6b3d; box-sizing: border-box; box-shadow:unset !important;}
+.selectOption>div {padding: 5px; position: relative;}
+.selected>.optionCounter {position: absolute; top: 0; left: 0; width: 100%; height: 100%; justify-content: space-between; align-items: center;}
+.selected>.optionCounter button {width: 40px; height: 40px; border: 1px solid #ccc; border-radius: 50%; box-sizing: border-box; background: #fff; color: #999;}
+.selected::before {
+	content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.count_box {width: 200px; height: 40px; display: flex; align-items: center; justify-content: flex-end; position: absolute; bottom: 90px; right: 30px;}
+
+/* .count-wrap {position: relative;padding: 0 38px;border: 1px solid #ddd;overflow: hidden;width: 60px; border-radius: 5px;} */
+.count-wrap > button {border: 0;background: white; color: #999; width: 38px;height: 38px;position: absolute;top: 0;font-size: 20px; font-weight: normal; border: 1px solid #ccc; box-sizing: border-box; border-radius: 50%;}
+.count-wrap > button.minus {left: 0;}
+.count-wrap > button.plus {right: 0;}
+.count-wrap .inp {border: 0;height: 38px;text-align: center; display: block; width: 100%; outline:none;}
